@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("button#start").click(function() {
-    $("div#survey").toggle();
-    $("button#start").toggle();
+    $("button#start").toggle("slow");
+    $("div#survey").delay(600).slideToggle(1000);
   });
 })
