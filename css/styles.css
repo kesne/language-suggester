@@ -22,6 +22,8 @@ body {
 h1 {
   text-align: center;
   padding: 0;
+  font-weight: bold;
+  font-variant: small-caps;
 }
 #heading-info p {
   text-indent: 4%;
@@ -62,9 +64,11 @@ h1 {
 #survey h2 {
   text-align: center;
 }
+
 .form-group input {
   width: 30%;
 }
+
 #survey p {
   display: inline-block;
   max-width: 100%;
