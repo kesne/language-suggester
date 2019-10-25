@@ -1,14 +1,17 @@
 body {
-  background-color: black;
+  background: linear-gradient(to bottom right, #ffedbc, #ed4264);
+  background-repeat: no-repeat;
+  height: cover;
 }
 .container {
+  margin: 20px auto 20px auto;
   width: 80%;
-  background-color: grey;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
 }
 
 h1 {
   text-align: center;
-
 }
 #heading-info p {
   text-indent: 4%;
