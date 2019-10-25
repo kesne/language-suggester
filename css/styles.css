@@ -25,12 +25,19 @@ h1 {
 }
 #heading-info p {
   text-indent: 4%;
+  text-align: justify;
 }
-.disclaimer {
+
+#heading-info span.disclaimer {
+  color: rgba(0, 0, 0, 0.5);
+}
+#heading-info p.disclaimer {
   font-size: 9px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.5);
+  text-align: right;
 }
+
 .buttonContainer {
   text-align: center;
 }
