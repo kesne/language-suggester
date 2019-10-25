@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  $("h1").click(function() {
-    alert("it worked!");
+  $("button#start").click(function() {
+    $("div#survey").toggle();
+    $("button#start").toggle();
   });
 })
