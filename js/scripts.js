@@ -22,9 +22,11 @@ function scoreCount(inputCheck) {
   } else if (inputCheck === "c++") {
     cplusplusCount += 1;
   } else {
-    console.log("Error - scoreCount input does not match to any languages.")
+    console.log("Error - scoreCount input does not match any languages.")
   }
 }
+
+functio
 
 $(document).ready(function () {
 
@@ -34,6 +36,7 @@ $(document).ready(function () {
   });
 
   $("form#userInfo").submit(function() {
+    event.preventDefault();
 
     var projectInput = $("input:radio[name=project]:checked").val();
     var planInput = $("input:radio[name=plan]:checked").val();
@@ -42,10 +45,13 @@ $(document).ready(function () {
     var musicInput = $("input:radio[name=music]:checked").val();
     var gemInput = $("input:radio[name=gem]:checked").val();
 
-    console.log(projectInput, planInput, animalInput, drinkInput, musicInput, gemInput);
-
-    event.preventDefault();
-
+    scoreCount(projectInput);
+    scoreCount(planInput);
+    scoreCount(animalInput);
+    scoreCount(drinkInput);
+    scoreCount(musicInput);
+    scoreCount(gemInput);
+    
   });
 
 });
