@@ -10,17 +10,20 @@
   </head>
   <body>
     <div class="container">
+
       <div id="heading-info">
         <h1>Language Suggester</h1>
         <p>Interested in learning how to code? With so many languages to choose from, even getting started can be a daunting task! The pressure to choose the "<em>right</em>" language to learn first can lead many people to quit before they even start. But don't let that be you! I, my dear user, am here to help you decide once and for all!</p>
-        <p>I've designed a simple yet highly informative survey that will guide you in the right direction<span class="disclaimer">*</span> for choosing your first language to learn. If you just fill out the questions below, an incredibly advanced algorithm<span class="disclaimer">**</span> will determine a few options that should be perfect just for you! The survey can guide you to all sorts of answers, from JavaScript, to Ruby, to Python, to C++ ⁠— the possibilities are endless! And always remember this: if you're not satisfied with the answer you receive, you can always take the survey again, or learn more languages after your first! Give it a go now and see what you get!</p>
+        <p>I've designed a simple yet highly informative survey that will guide you in the right direction<span class="disclaimer">*</span> for choosing your first language to learn. If you just fill out the questions below, an incredibly advanced algorithm<span class="disclaimer">**</span> will determine a few options that should be perfect just for you! The survey can guide you to all sorts of answers, from JavaScript, to Ruby, to Python, to C++ ⁠- the possibilities are endless! And always remember this: if you're not satisfied with the answer you receive, you can always take the survey again, or learn more languages after your first! Give it a go now and see what you get!</p>
 
-        <p class="disclaimer">* "right" direction is based on minimal research ⁠— use survey at your own risk</p>
+        <p class="disclaimer">* "right" direction is based on minimal research ⁠- use survey at your own risk</p>
         <p class="disclaimer">** algorithm not actually incredibly advanced ¯\_(ツ)_/¯</p>
         <div class="buttonContainer">
           <button type="button" class="btn" id="start">Start the survey!</button>
         </div>
       </div>
+
+      <!--Survey Questions!-->
       <div id="survey">
         <h2>All about you!</h2>
         <form id="userInfo">
@@ -67,7 +70,7 @@
 
           <p>Would you rather make something functional, or make it pretty?</p>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="radio">
                 <label>
                   <input type="radio" name="enjoyType" value="func">
@@ -75,7 +78,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="radio">
                 <label>
                   <input type="radio" name="enjoyType" value="pretty">
@@ -83,7 +86,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="radio">
                 <label>
                   <input type="radio" name="enjoyType" value="three">
@@ -91,10 +94,166 @@
                 </label>
               </div>
             </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="enjoyType" value="three">
+                  I don't really like either...
+                </label>
+              </div>
+            </div>
           </div>
 
+          <p>What kind of pet would you most like to own?</p>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="animal" value="">
+                  Dog
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="animal" value="">
+                  Cat
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="animal" value="">
+                  Snake
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="animal" value="">
+                  Raccoon
+                </label>
+              </div>
+            </div>
+          </div>
 
+          <p>What's your favorite drink?</p>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="drink" value="">
+                  Coffee
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="drink" value="">
+                  Tea
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="drink" value="">
+                  Energy Drinks
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="drink" value="">
+                  Other
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <p>What's your least favorite major key in music?</p>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="webdesign">
+                  D♭ - too many flats!
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="data">
+                  F#/G♭ - you just can't win.
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="game">
+                  B - too many sharps!
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="phone">
+                  C - too easy!
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <p>What types of coding projects do you want to work on?</p>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="webdesign">
+                  Webdesign
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="data">
+                  Data Analysis
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="game">
+                  Game Development
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="projectType" value="phone">
+                  Phone Apps
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="buttonContainer">
+            <button type="button" class="btn" id="finish">Submit Answers!</button>
+          </div>
         </form>
+      </div>
+
+      <div>
       </div>
     </div>
   </body>
