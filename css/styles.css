@@ -28,6 +28,8 @@ h1 {
 #heading-info p {
   text-indent: 4%;
   text-align: justify;
+  font-family: serif;
+  font-size: 16px;
 }
 
 #heading-info span.disclaimer {
@@ -63,6 +65,7 @@ h1 {
 }
 #survey h2 {
   text-align: center;
+  font-weight: bold;
 }
 
 .form-group input {

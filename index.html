@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <!-- <link href="css/styles.css" rel="stylesheet" type="text/css" media="all"> -->
     <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <title>Language Suggester</title>
@@ -27,7 +27,7 @@
       <!-- Survey Questions -->
       <div id="survey">
         <h2>All about you!</h2>
-        <form id="userInfo">
+        <form id="formOne">
           <div class="form-group">
             <label for="userName">What's your name?</label>
             <input id="userName" class="form-control" type="text">
@@ -38,7 +38,7 @@
             <div class="col-md-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="projectType" value="javascript">
+                  <input type="radio" name="project" value="javascript">
                   Webdesign
                 </label>
               </div>
@@ -46,7 +46,7 @@
             <div class="col-md-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="projectType" value="python">
+                  <input type="radio" name="project" value="python">
                   Data Analysis
                 </label>
               </div>
@@ -54,7 +54,7 @@
             <div class="col-md-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="projectType" value="c++">
+                  <input type="radio" name="project" value="c++">
                   Game Development
                 </label>
               </div>
@@ -66,7 +66,7 @@
             <div class="col-md-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="enjoyType" value="ruby">
+                  <input type="radio" name="plan" value="ruby">
                   I'm a planner!
                 </label>
               </div>
@@ -74,7 +74,7 @@
             <div class="col-md-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="enjoyType" value="javascript">
+                  <input type="radio" name="plan" value="javascript">
                   I tend to just React to my surroundings.
                 </label>
               </div>
@@ -82,7 +82,7 @@
             <div class="col-md-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="enjoyType" value="java">
+                  <input type="radio" name="plan" value="java">
                   Whatever works best for the situation!
                 </label>
               </div>
@@ -232,9 +232,9 @@
               </div>
             </div>
           </div>
-          <div class="buttonContainer">
+          <!-- <div class="buttonContainer"> -->
             <button type="button" class="btn" id="finish">Submit Answers!</button>
-          </div>
+          <!-- </div> -->
         </form>
       </div>
 
