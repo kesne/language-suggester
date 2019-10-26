@@ -36,7 +36,8 @@ function indexInterpreter(indexNumber) {
   } else if (indexNumber === 4) {
     return "Java";
   } else if (indexNumber === 5) {
-    return "C#";
+    //using # (hash) creates issues with image retrieval later, ♯ (sharp) does not
+    return "C♯";
   } else if (indexNumber === 6) {
     return "C++";
   } else {
@@ -51,6 +52,19 @@ function finalResult() {
   winner = indexInterpreter(winnerIndex);
   runnerUp = indexInterpreter(runnerUpIndex);
 }
+
+function wikiURL(languageName) {
+  var wikiLink = "https://en.wikipedia.org/wiki/"
+  if (languageName === "C♯") {
+    wikiLink += "C_Sharp_(programming_language)";
+  } else if (languageName === "JavaScript" || languageName === "C++") {
+    wikiLink += languageName;
+  } else {
+    wikiLink = wikiLink + languageName + "_(programming_language)"
+  }
+  return wikiLink;
+}
+
 
 //Front-End Logic
 $(document).ready(function () {
@@ -79,14 +93,16 @@ $(document).ready(function () {
 
     finalResult();
 
-    //results preparation
+    //fill result panels
     $("span.nameInsert").text($("input#userName").val());
-    $("#option1 h3").text(winner);
+    $("#option1 span").text(winner);
     $("#option1 img").attr("src", "img/" + winner.toLowerCase() + ".png");
-    $("#option2 h3").text(runnerUp);
+    $("#option1 a").attr("href", wikiURL(winner));
+    $("#option2 span").text(runnerUp);
     $("#option2 img").attr("src", "img/" + runnerUp.toLowerCase() + ".png");
+    $("#option2 a").attr("href", wikiURL(runnerUp));
 
-    //results reveal
+    //reveal result panels
     $("div#survey").slideToggle(1000);
     $("div#result").delay(1000).slideToggle(1000);
   });

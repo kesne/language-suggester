@@ -48,7 +48,7 @@ h1 {
 .buttonContainer button {
   background-color: #7a7a7a;
   border-radius: 10px;
-  color: white;
+  color: #f7f7f7;
 }
 .buttonContainer button:hover {
   background-color: #9c9c9c;
@@ -94,9 +94,9 @@ h1 {
 
 #result {
   display: none;
+  text-align: center;
 }
 #result h3 {
-  text-align: center;
   font-weight: bold;
   font-variant: small-caps;
   font-size: 30px;
@@ -108,11 +108,12 @@ h1 {
 
 .option {
   background-color: white;
-  height: 400px;
+  width: fixed;
 }
 #result img {
-  height: 60%;
+  width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
