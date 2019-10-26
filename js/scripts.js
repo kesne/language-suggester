@@ -4,23 +4,23 @@ var scoreboard = [0, 0, 0, 0, 0, 0, 0];
 var winner = "";
 var runnerUp = "";
 
-function scoreCount(inputCheck) {
-  if (inputCheck === "ruby") {
+function scoreCount(questionValue) {
+  if (questionValue === "ruby") {
     scoreboard[0] += 1;
-  } else if (inputCheck === "javascript") {
+  } else if (questionValue === "javascript") {
     scoreboard[1] += 1;
-  } else if (inputCheck === "python") {
+  } else if (questionValue === "python") {
     scoreboard[2] += 1;
-  } else if (inputCheck === "go") {
+  } else if (questionValue === "go") {
     scoreboard[3] += 1;
-  } else if (inputCheck === "java") {
+  } else if (questionValue === "java") {
     scoreboard[4] += 1;
-  } else if (inputCheck === "c#") {
+  } else if (questionValue === "c#") {
     scoreboard[5] += 1;
-  } else if (inputCheck === "c++") {
+  } else if (questionValue === "c++") {
     scoreboard[6] += 1;
   } else {
-    console.log("Error in scoreCount - input does not match any languages.");
+    console.log("Error in scoreCount - questionValue is not a language.");
   }
 }
 
