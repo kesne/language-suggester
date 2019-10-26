@@ -1,6 +1,8 @@
 //Scoreboard's indexes represent languages in this order:
 // ruby, js, python, go, java, c#, c++
 var scoreboard = [0, 0, 0, 0, 0, 0, 0];
+var winner = "";
+var runnerUp = "";
 
 function scoreCount(inputCheck) {
   if (inputCheck === "ruby") {
@@ -43,12 +45,11 @@ function indexInterpreter(indexNumber) {
 }
 
 function finalResult() {
-  alert(Math.max(...scoreboard));
   var winnerIndex = scoreboard.indexOf(Math.max(...scoreboard));
   scoreboard[winnerIndex] = 0;
   var runnerUpIndex = scoreboard.indexOf(Math.max(...scoreboard));
-  console.log(indexInterpreter(winnerIndex));
-  console.log(indexInterpreter(runnerUpIndex));
+  winner = indexInterpreter(winnerIndex);
+  runnerUp = indexInterpreter(runnerUpIndex);
 }
 
 //Front-End Logic
@@ -78,7 +79,12 @@ $(document).ready(function () {
 
     finalResult();
 
+    //results preparation
     $("span.nameInsert").text($("input#userName").val());
+    $("#option1 h3").text(winner);
+    $("#option2 h3").text(runnerUp);
+
+    //results reveal
     $("div#survey").slideToggle(1000);
     $("div#result").delay(1000).slideToggle(1000);
   });
