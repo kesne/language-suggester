@@ -18,26 +18,45 @@ function scoreCount(inputCheck) {
   } else if (inputCheck === "c++") {
     scoreboard[6] += 1;
   } else {
-    console.log("Error - scoreCount input does not match any languages.")
+    console.log("Error in scoreCount - input does not match any languages.");
   }
 }
 
-function indexInterpreter() {
-
+function indexInterpreter(indexNumber) {
+  if (indexNumber === 0) {
+    return "Ruby";
+  } else if (indexNumber === 1) {
+    return "JavaScript";
+  } else if (indexNumber === 2) {
+    return "Python";
+  } else if (indexNumber === 3) {
+    return "Go";
+  } else if (indexNumber === 4) {
+    return "Java";
+  } else if (indexNumber === 5) {
+    return "C#";
+  } else if (indexNumber === 6) {
+    return "C++";
+  } else {
+    console.log("Error in indexInterpreter - indexNumber not in array.");
+  }
 }
 
-function scoreCheck() {
+function finalResult() {
   alert(Math.max(...scoreboard));
-  var winner1 = scoreboard.indexOf(Math.max(...scoreboard));
-  scoreboard[winner] = 0;
-  var winner2 = scoreboard.indexOf(Math.max(...scoreboard));
+  var winnerIndex = scoreboard.indexOf(Math.max(...scoreboard));
+  scoreboard[winnerIndex] = 0;
+  var runnerUpIndex = scoreboard.indexOf(Math.max(...scoreboard));
+  console.log(indexInterpreter(winnerIndex));
+  console.log(indexInterpreter(runnerUpIndex));
 }
 
+//Front-End Logic
 $(document).ready(function () {
 
   $("button#start").click(function() {
-    $("button#start").toggle("slow");
-    $("div#survey").delay(600).slideToggle(1000);
+    $("button#start").toggle(400);
+    $("div#survey").delay(400).slideToggle(1000);
   });
 
   $("form#userInfo").submit(function() {
@@ -58,6 +77,10 @@ $(document).ready(function () {
     scoreCount(gemInput);
 
     finalResult();
+
+    $("span.nameInsert").text($("input#userName").val());
+    $("div#survey").slideToggle(1000);
+    $("div#result").delay(1000).slideToggle(1000);
   });
 
 });
