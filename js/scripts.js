@@ -1,32 +1,37 @@
-var rubyCount = 0;
-var javascriptCount = 0;
-var pythonCount = 0;
-var goCount = 0;
-var javaCount = 0;
-var csharpCount = 0;
-var cplusplusCount = 0;
+//Scoreboard's indexes represent languages in this order:
+// ruby, js, python, go, java, c#, c++
+var scoreboard = [0, 0, 0, 0, 0, 0, 0];
 
 function scoreCount(inputCheck) {
   if (inputCheck === "ruby") {
-    rubyCount += 1;
+    scoreboard[0] += 1;
   } else if (inputCheck === "javascript") {
-    javascriptCount += 1;
+    scoreboard[1] += 1;
   } else if (inputCheck === "python") {
-    pythonCount += 1;
+    scoreboard[2] += 1;
   } else if (inputCheck === "go") {
-    goCount += 1;
+    scoreboard[3] += 1;
   } else if (inputCheck === "java") {
-    javaCount += 1;
+    scoreboard[4] += 1;
   } else if (inputCheck === "c#") {
-    csharpCount += 1;
+    scoreboard[5] += 1;
   } else if (inputCheck === "c++") {
-    cplusplusCount += 1;
+    scoreboard[6] += 1;
   } else {
     console.log("Error - scoreCount input does not match any languages.")
   }
 }
 
-functio
+function indexInterpreter() {
+
+}
+
+function scoreCheck() {
+  alert(Math.max(...scoreboard));
+  var winner1 = scoreboard.indexOf(Math.max(...scoreboard));
+  scoreboard[winner] = 0;
+  var winner2 = scoreboard.indexOf(Math.max(...scoreboard));
+}
 
 $(document).ready(function () {
 
@@ -51,7 +56,8 @@ $(document).ready(function () {
     scoreCount(drinkInput);
     scoreCount(musicInput);
     scoreCount(gemInput);
-    
+
+    finalResult();
   });
 
 });
