@@ -100,7 +100,6 @@ h1 {
   font-weight: bold;
   font-variant: small-caps;
   font-size: 30px;
-  height: 200px;
 }
 
 .nameInsert {
@@ -109,7 +108,11 @@ h1 {
 
 .option {
   background-color: white;
+  height: 400px;
 }
 #result img {
-  width: 80%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

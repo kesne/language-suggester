@@ -82,7 +82,9 @@ $(document).ready(function () {
     //results preparation
     $("span.nameInsert").text($("input#userName").val());
     $("#option1 h3").text(winner);
+    $("#option1 img").attr("src", "img/" + winner.toLowerCase() + ".png");
     $("#option2 h3").text(runnerUp);
+    $("#option2 img").attr("src", "img/" + runnerUp.toLowerCase() + ".png");
 
     //results reveal
     $("div#survey").slideToggle(1000);
