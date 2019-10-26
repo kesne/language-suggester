@@ -1,6 +1,6 @@
 # First Programming Language Suggester
 
-#### _A page that suggests what programming language to learn first, Oct. 25, 2019_
+#### _A page that suggests what programming language to learn first - Oct. 25, 2019_
 
 #### By _Jaime Gensler_
 
